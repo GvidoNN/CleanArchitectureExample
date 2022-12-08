@@ -1,18 +1,15 @@
-package my.lovely.mvvmexample
+package my.lovely.mvvmexample.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.lifecycle.ViewModelProvider
+import my.lovely.mvvmexample.R
 import my.lovely.mvvmexample.domain.models.SaveUserNameParam
 import my.lovely.mvvmexample.domain.models.UserName
 import my.lovely.mvvmexample.domain.usecase.GetUserNameUseCase
 import my.lovely.mvvmexample.domain.usecase.SaveUserNameUseCase
-import org.w3c.dom.Text
-import java.lang.Error
 
 class MainActivity : AppCompatActivity() {
 
