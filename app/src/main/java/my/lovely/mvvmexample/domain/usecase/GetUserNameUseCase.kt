@@ -1,11 +1,12 @@
 package my.lovely.mvvmexample.domain.usecase
 
 import my.lovely.mvvmexample.domain.models.UserName
+import my.lovely.mvvmexample.domain.repository.UserRepository
 
-class GetUserNameUseCase {
+class GetUserNameUseCase(private val userRepository: UserRepository) {
 
     fun execute(): UserName {
-        return UserName(firstName = "Kiparo", lastName = "Hello")
+        return userRepository.getName()
 
     }
 }
